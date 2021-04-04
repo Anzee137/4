@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | [Blogr]</title>
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+	<header class="header">
+	
+		<div class="header-burger">
+			<span>
+
+			</span>
+	</div>
+	
+		<div class="header-top">
+		<section class="header-sec">
+  			<button id="dropdown1" class="btn"><a class="header-a2" href="#">Product</a> <img src="images/icon-arrow-light.svg" alt="" style="transform:rotate(0deg);" id="img1"></button>
+<div id="text1" class="dropdown" hidden>
+  <a class="header-a" href="#">Overview</a>
+  <a class="header-a" href="#">Pricing</a>
+  <a class="header-a" href="#">Marketplace</a>
+  <a class="header-a" href="#">Features</a>
+  <a class="header-a" href="#">Integrations</a>
+ </div>
+ <script type="text/javascript">
+	document.getElementById('dropdown1').onclick = function() {
+      if (document.getElementById('text1').hidden){
+        document.getElementById('text1').hidden = false;
+        document.getElementById('img1').style = "transform:rotate(180deg);"
+      }else{
+      document.getElementById('text1').hidden = true;
+      document.getElementById('img1').style = "transform:rotate(0deg);"
+    }}
+
+</script>
+		</section>
+		<section class="header-sec">
+  <button id="dropdown2" class="btn"><a class="header-a2" href="#">Company</a> <img src="images/icon-arrow-light.svg" alt="" style="transform:rotate(0deg);" id="img2"></button>
+  <div id="text2" class="dropdown" hidden>
+  	<a class="header-a" href="#">About</a>
+  	<a class="header-a" href="#">Team</a>
+  	<a class="header-a" href="#">Blog</a>
+ 	 <a class="header-a" href="#">Careers</a>
+</div>
+ <script type="text/javascript">
+	document.getElementById('dropdown2').onclick = function() {
+      if (document.getElementById('text2').hidden){
+        document.getElementById('text2').hidden = false;
+        document.getElementById('img2').style = "transform:rotate(180deg);"
+      }else{
+      document.getElementById('text2').hidden = true;
+      document.getElementById('img2').style = "transform:rotate(0deg);"
+    }}
+
+</script>
+</section>
+<section class="header-sec">
+  <button id="dropdown3" class="btn"><a class="header-a2" href="#">Connect</a> <img src="images/icon-arrow-light.svg" alt="" style="transform:rotate(0deg);" id="img3"></button>
+  <div id="text3" class="dropdown" hidden>
+  <a class="header-a" href="#">Contact</a>
+  <a class="header-a" href="#">Newsletter</a>
+  <a class="header-a" href="#">LinkedIn</a>
+  </div>
+   <script type="text/javascript">
+	document.getElementById('dropdown3').onclick = function() {
+      if (document.getElementById('text3').hidden){
+        document.getElementById('text3').hidden = false;
+        document.getElementById('img3').style = "transform:rotate(180deg);"
+      }else{
+      document.getElementById('text3').hidden = true;
+      document.getElementById('img3').style = "transform:rotate(0deg);"
+    }}
+
+</script>
+</section>
+<div>
+  <button class="login"><a class="header-a1" href="#">Login</a></button></div><div>
+  <button class="sign-up"><a class="header-a1" href="#">Sign Up</a></button></div>
+</div>
+  <div class="header-down">
+<div class="text">
+  <h1 style="font-size:50px">A modern publishing platform</h1>
+  <p style="font-size:25px">Grow your audience and build your online brand</p>
+</div>
+<div class="start">
+  <button class="start-for-free"><a class="header-a1" href="#">Start for Free</a></button>
+  <button class="learn-more"><a class="header-a1" href="#">Learn More</a></button>
+</div></div>
+</header>
+
+<main class="main">
+	<div class="main1">
+  <h2>Designed for the future</h2>
+<section>
+  <h3>Introducing an extensible editor</h3>
+  <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.</p>
+</section>
+<section>
+ <h3> Robust content management</h3>
+  <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+</section>
+</div>
+<div class="main2">
+<section>
+  <h2 >State of the Art Infrastructure</h2>
+  <p style="margin-top:5px;">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+</section>
+</div>
+<div class="main3">
+<section>
+  <h3>Free, open, simple</h3>
+  <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+</section>
+<section >
+  <h3 >Powerful tooling</h3>
+  <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.</p>
+</section>
+</div>
+</main>
+<footer class="footer">
+	<section class="footer-sec">
+  <h4>Product</h4>
+
+  <a class="footer-a" href="#">Overview</a>
+  <a class="footer-a" href="#">Pricing</a>
+  <a class="footer-a" href="#">Marketplace</a>
+  <a class="footer-a" href="#">Features</a>
+  <a class="footer-a" href="#">Integrations</a>
+</section>
+  <section class="footer-sec">
+  <h4>Company</h4>
+
+  <a class="footer-a" href="#">About</a>
+  <a class="footer-a" href="#">Team</a>
+  <a class="footer-a" href="#">Blog</a>
+  <a class="footer-a" href="#">Careers</a>
+</section>
+  <section class="footer-sec">
+
+  <h4>Connect</h4>
+  
+  <a class="footer-a" href="#">Contact</a>
+  <a class="footer-a" href="#">Newsletter</a>
+  <a class="footer-a" href="#">LinkedIn</a>
+</section>
+</footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Anzee137">Artyom</a>.
+  </div>
+  <script src="1.js"></script>
+</body>
+</html>
